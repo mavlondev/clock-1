@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+main {
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+main .clock {
+  background-color: rgba(238, 238, 238, 0);
+}
+main .clock-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  padding: 0px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.09) inset, -20px 20px 20px rgba(0, 0, 0, 0.09) inset, 20px -20px 20px rgba(0, 0, 0, 0.09) inset, -20px -20px 20px rgba(0, 0, 0, 0.09) inset;
+}
+main .clock-box .mil-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(-90deg);
+}
+main .clock-box .mil-box .middle {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: black;
+  content: "";
+  border-radius: 50%;
+  z-index: 10;
+}
+main .clock-box .mil-box .second {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: none;
+  outline: none;
+  border-radius: 50px;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0);
+  width: 160px;
+  height: 3px;
+}
+main .clock-box .mil-box .second::after {
+  position: absolute;
+  content: "";
+  width: 50%;
+  height: 100%;
+  left: 50%;
+  z-index: 1;
+  background-color: rgb(177, 3, 3);
+}
+main .clock-box .mil-box .minut {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: none;
+  outline: none;
+  border-radius: 50px;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0);
+  width: 140px;
+  height: 4px;
+}
+main .clock-box .mil-box .minut::after {
+  position: absolute;
+  content: "";
+  width: 50%;
+  height: 100%;
+  left: 50%;
+  z-index: 1;
+  background-color: rgb(49, 3, 177);
+}
+main .clock-box .mil-box .hour {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: none;
+  outline: none;
+  border-radius: 50px;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0);
+  width: 120px;
+  height: 5px;
+}
+main .clock-box .mil-box .hour::after {
+  position: absolute;
+  content: "";
+  width: 50%;
+  height: 100%;
+  left: 50%;
+  z-index: 1;
+  background-color: rgb(22, 22, 22);
+}
+main .clock-box .hour-num span {
+  position: absolute;
+  font-size: 16px;
+}
+main .clock-box .hour-num span:nth-child(1) {
+  transform: translateY(-50%);
+  right: 15px;
+}
+main .clock-box .hour-num span:nth-child(2) {
+  transform: translateX(-50%);
+  bottom: 15px;
+}
+main .clock-box .hour-num span:nth-child(3) {
+  transform: translateY(-50%);
+  left: 15px;
+}
+main .clock-box .hour-num span:nth-child(4) {
+  transform: translateX(-50%);
+  top: 15px;
+}
+main .clock .total {
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  color: white;
+  padding-top: 20px;
+  font-size: 20px;
+  font-weight: 700;
+}
+main .clock .total-time {
+  text-shadow: 0 5px rgba(0, 0, 0, 0.6666666667);
+}
+main .clock .total-year {
+  padding-top: 20px;
+  font-size: 25px;
+  color: transparent;
+  background: linear-gradient(black, white);
+  -webkit-background-clip: text;
+          background-clip: text;
+}/*# sourceMappingURL=style.css.map */
